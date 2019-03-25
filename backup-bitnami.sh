@@ -17,7 +17,7 @@ echo `date +"%F %r"`: Stopped Wordpress.
 sudo tar -pczf $FILE_NAME $SITE_ROOT
 echo `date +"%F %r"`: Packaged and compressed Wordpress $FILE_NAME.
 
-sudo /opt/bitnami/ctlscript.sh start
+sudo /opt/bitnami/ctlscript.sh start &
 echo `date +"%F %r"`: Starting Wordpress.
 
 if [ $# -ge 2 ]
