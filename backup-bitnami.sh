@@ -34,5 +34,5 @@ then
 
     # Removed the back files older than 3 months.
     ssh $REMOTE_HOST "find $REMOTE_DIR/*.tar.gz -mtime +93 -exec rm {} \;"
-    echo `date +"%F %r"`: Removed the obseleted backup files from $REMOTE_HOST$REMOTE_DIR.
+    echo `date +"%F %r"`: Removed the obseleted backup files from $REMOTE_HOST:$REMOTE_DIR.
 fi
